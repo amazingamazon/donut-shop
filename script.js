@@ -22,11 +22,20 @@ DonutShop.prototype.perDay = function() {
   }
 
   return total;
-
 };
 
 DonutShop.prototype.render = function() {
+  var newRow = document.createElement("tr");
 
+  newRow.innerHTML = "<td>" + this.location + "</td>";
+
+  for (i = 0; i < this.hoursOpen; i++) {
+      newRow.innerHTML += "<td>" + this.perHour() + "</td>";
+    }
+
+  newRow.innerHTML += "<td>" + this.perDay() + "</td>";
+
+  return newRow;
 };
 
 var downtown = new DonutShop("Downtown", {minCustomers: 8, maxCustomers: 43, avgPerCustomer: 4.50, hoursOpen: 11});
@@ -35,3 +44,10 @@ var southLakeUnion = new DonutShop("South Lake Union", {minCustomers: 9, maxCust
 var wedgewood = new DonutShop("Wedgewood", {minCustomers: 2, maxCustomers: 28, avgPerCustomer: 1.25, hoursOpen: 11});
 var ballard = new DonutShop("Ballard", {minCustomers: 8, maxCustomers: 58, avgPerCustomer: 3.75, hoursOpen: 11});
 
+var main = document.getElementById("donut-demand");
+
+main.appendChild(downtown.render());
+main.appendChild(capitolHill.render());
+main.appendChild(southLakeUnion.render());
+main.appendChild(wedgewood.render());
+main.appendChild(ballard.render());
