@@ -5,7 +5,6 @@
     <style>
     table { border: 1px solid black; border-collapse: collapse; width: 100%; padding: 10px; max-width: 1300px }
     th { background-color: white; border-bottom: 1px solid black }
-    tr { padding: 10px }
     tr:nth-child(even) { background-color: aliceblue }
     tr:nth-child(odd) { background-color: lightblue }
     </style>
@@ -36,11 +35,11 @@
     <form id="new-shop">
         <fieldset>
             <legend>Add a New Location</legend>
-            Name: <input type="text"><br>
-            Maximum Customers per Hour: <input type="number"><br>
-            Minimum Customers per Hour: <input type="number"><br>
-            Average Donuts per Customer: <input type="number"><br>
-            <button id="btn">Add</button>
+            Name: <input type="text" placeholder="Location Name"><br>
+            Minimum Customers per Hour: <input type="text" placeholder="0"><br>
+            Maximum Customers per Hour: <input type="text" placeholder="0"><br>
+            Average Donuts per Customer: <input type="text" placeholder="0.00"><br>
+            <input type="submit" value="Add">
         </fieldset>
     </form>
     <script src="script.js"></script>
