@@ -33,7 +33,16 @@
         </tbody>
     </table>
     <p>The chart above uses data from Top Pot's business development team to model a typical day of donut sales for each location broken down by the hour. It uses a random generator to determine how many donuts customers will buy from data reported by each shop. To model a new day, refresh the browser window.</p>
-
+    <form id="new-shop">
+        <fieldset>
+            <legend>Add a New Location</legend>
+            Name: <input type="text"><br>
+            Maximum Customers per Hour: <input type="number"><br>
+            Minimum Customers per Hour: <input type="number"><br>
+            Average Donuts per Customer: <input type="number"><br>
+            <button id="btn">Add</button>
+        </fieldset>
+    </form>
     <script src="script.js"></script>
   </body>
 </html>
