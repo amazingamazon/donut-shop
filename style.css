@@ -1,0 +1,51 @@
+@import url(http://fonts.googleapis.com/css?family=Ledger|Dancing+Script);
+
+* {
+  border: 1px dotted red;
+}
+
+body {
+  font-family: 'Ledger', Helvetica, serif;
+  font-size: 18px;
+}
+
+h1 {
+  font-family: 'Dancing Script', cursive;
+  font-size: 75px;
+  text-align: center;
+}
+
+h2 {
+  font-family: 'Dancing Script', cursive;
+  font-size: 32px;
+}
+
+table {
+  width: 100%;
+  padding: 10px;
+  max-width: 1300px;
+  text-align: right;
+}
+
+
+th {
+  background-color: white;
+  border-bottom: 1px solid black;
+}
+
+tr:nth-child(even) {
+  background-color: aliceblue;
+}
+
+tr:nth-child(odd) {
+  background-color: lightblue;
+}
+
+ul li {
+  display: inline;
+}
+
+a .fa:hover {
+  color:blue;
+}
+
