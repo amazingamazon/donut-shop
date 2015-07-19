@@ -3,7 +3,6 @@
 body {
   font-family: 'Ledger', Helvetica, serif;
   font-size: 18px;
-  padding: 2.25em 1.6875em;
   background-color: #F1E8E0;
   background-image: -webkit-repeating-radial-gradient(center center, rgba(44,62,80,.2), rgba(44,62,80,.2) 1px, transparent 1px, transparent 100%);
   background-image: -moz-repeating-radial-gradient(center center, rgba(44,62,80,.2), rgba(44,62,80,.2) 1px, transparent 1px, transparent 100%);
@@ -12,8 +11,23 @@ body {
   -webkit-background-size: 3px 3px;
   -moz-background-size: 3px 3px;
   background-size: 3px 3px;
-  padding: 0;
+}
+
+header {
+  width: 100%;
+  height: 225px;
+  background: #c74134;
+  background: -moz-linear-gradient(top, #c74134 0%, #e74c3c 100%);
+  background: -webkit-gradient(left top, left bottom, color-stop(0%, #c74134), color-stop(100%, #e74c3c));
+  background: -webkit-linear-gradient(top, #c74134 0%, #e74c3c 100%);
+  background: -o-linear-gradient(top, #c74134 0%, #e74c3c 100%);
+  background: -ms-linear-gradient(top, #c74134 0%, #e74c3c 100%);
+  background: linear-gradient(to bottom, #c74134 0%, #e74c3c 100%);
+  position:fixed;
+  top: 0;
+  left: 0;
   margin: 0;
+  z-index: 10;
 }
 
 h1 {
@@ -24,9 +38,29 @@ h1 {
   line-height: 175%;
 }
 
+.main {
+  line-height: 32px;
+  margin: 32px;
+  padding: 32px;
+  margin-top: 300px;
+}
+
 h2 {
   font-family: 'Dancing Script', cursive;
-  font-size: 32px;
+  font-size: 42px;
+  position: absolute;
+  top: 350px;
+  left: 250px;
+}
+
+p {
+  margin: 20px;
+}
+
+.intro {
+  float: right;
+  width: 50%;
+  margin-bottom: 60px;
 }
 
 nav {
@@ -39,21 +73,12 @@ nav {
   border-bottom: 1px solid black;
 }
 
-header {
-  width: 100%;
-  height: 200px;
-  background: #c74134;
-  background: -moz-linear-gradient(top, #c74134 0%, #e74c3c 100%);
-  background: -webkit-gradient(left top, left bottom, color-stop(0%, #c74134), color-stop(100%, #e74c3c));
-  background: -webkit-linear-gradient(top, #c74134 0%, #e74c3c 100%);
-  background: -o-linear-gradient(top, #c74134 0%, #e74c3c 100%);
-  background: -ms-linear-gradient(top, #c74134 0%, #e74c3c 100%);
-  background: linear-gradient(to bottom, #c74134 0%, #e74c3c 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c74134', endColorstr='#e74c3c', GradientType=0 );
-}
-
 li {
   display: inline;
+  padding-right: 50px;
+  padding-left: 50px;
+  padding-top: 10px;
+  padding-bottom: 15px;
 }
 
 a {
@@ -61,19 +86,8 @@ a {
   color: #F1E8E0;
 }
 
-li a:hover {
+li:hover {
   background-color: #3498DB;
-  height: 100%;
-}
-
-a .fa:hover {
-  color:blue;
-}
-
-.main {
-  line-height: 32px;
-  margin: 32px;
-  padding: 32px;
 }
 
 table {
@@ -102,6 +116,12 @@ fieldset {
   border: 2px solid black;
   background-color: white:
   text-align: center;
+  width: 50%;
+  padding: 20px;
+  position: relative;
+  left: 600px;
+  bottom: 40px;
+  border-radius: 15px;
 }
 
 legend {
@@ -126,6 +146,7 @@ legend {
   width: 100px;
   font-family: "Ledger", Helvetica, serif;
   font-size: 16px;
+  cursor: pointer;
 }
 
 .button:active {
