@@ -3,6 +3,8 @@
 body {
   font-family: 'Ledger', Helvetica, serif;
   font-size: 18px;
+  margin-left: auto;
+  margin-right: auto;
   background-color: #F1E8E0;
   background-image: -webkit-repeating-radial-gradient(center center, rgba(44,62,80,.2), rgba(44,62,80,.2) 1px, transparent 1px, transparent 100%);
   background-image: -moz-repeating-radial-gradient(center center, rgba(44,62,80,.2), rgba(44,62,80,.2) 1px, transparent 1px, transparent 100%);
@@ -59,7 +61,7 @@ p {
 
 .intro {
   float: right;
-  width: 50%;
+  width: 750px;
   margin-bottom: 60px;
 }
 
@@ -86,7 +88,7 @@ a {
   color: #F1E8E0;
 }
 
-li:hover {
+nav li:hover {
   background-color: #3498DB;
 }
 
@@ -116,10 +118,10 @@ fieldset {
   border: 2px solid black;
   background-color: white:
   text-align: center;
-  width: 50%;
+  width: 550px;
   padding: 20px;
   position: relative;
-  left: 600px;
+  left: 500px;
   bottom: 40px;
   border-radius: 15px;
 }
@@ -154,8 +156,30 @@ legend {
 }
 
 .button:hover {
-  background: transparent;
-  border: 2px solid white;
-  color: #226fbe;
+  border: 2px solid #F1E8E0;
+  color: #F1E8E0;
 }
 
+blockquote {
+  float: right;
+  width: 250px;
+  border-top: 2px solid #e74c3c;
+  border-bottom: 2px solid #e74c3c;
+  font-size: 130%;
+  padding: 20px;
+  margin-left: 10px;
+}
+
+footer {
+  background-color: #2C3E50;
+  text-align: center;
+  height: 50px;
+  width: 100%;
+  line-height: 250%;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+}
+
+footer li {
+ color: #F1E8E0;
+}
