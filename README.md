@@ -13,7 +13,9 @@ Thank you!
 Also, a big thank you to my inspirations for the look of this site:
 
 http://skillcrush.com/2015/06/11/8-free-font-pairings/
+
 http://fortawesome.github.io/Font-Awesome/
+
 http://codepen.io/nyte/pen/bEcsw
 
 https://color.adobe.com/Flat-UI-color-theme-2469224/edit/?copy=true&base=1&rule=Custom&selected=1&name=Copy%20of%20Flat%20UI&mode=rgb&rgbvalues=0.172549,0.243137,0.313725,0.905882,0.298039,0.235294,0.945098,0.909376630661144,0.879485326751633,0.203922,0.596078,0.858824,0.160784,0.501961,0.72549&swatchOrder=0,1,2,3,4
