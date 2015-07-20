@@ -91,6 +91,14 @@ h2 {
   position: absolute;
   top: 350px;
   left: 250px;
+  transition-property: color;
+  transition-duration: 0.2s;
+  transition-timing-function: linear;
+}
+
+h2:hover {
+  transform: scale(2.0);
+  color:red;
 }
 
 p {
