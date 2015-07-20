@@ -18,6 +18,11 @@ body {
 header {
   width: 100%;
   height: 225px;
+  position:fixed;
+  top: 0;
+  left: 0;
+  margin: 0;
+  z-index: 10;
   background: #c74134;
   background: -moz-linear-gradient(top, #c74134 0%, #e74c3c 100%);
   background: -webkit-gradient(left top, left bottom, color-stop(0%, #c74134), color-stop(100%, #e74c3c));
@@ -25,11 +30,12 @@ header {
   background: -o-linear-gradient(top, #c74134 0%, #e74c3c 100%);
   background: -ms-linear-gradient(top, #c74134 0%, #e74c3c 100%);
   background: linear-gradient(to bottom, #c74134 0%, #e74c3c 100%);
-  position:fixed;
-  top: 0;
-  left: 0;
-  margin: 0;
-  z-index: 10;
+}
+
+img {
+  width: 100%;
+  height: 225px;
+  border: 2px solid black;
 }
 
 h1 {
@@ -40,11 +46,43 @@ h1 {
   line-height: 175%;
 }
 
+.card-container {
+  perspective: 1000;
+}
+
+.card-container:hover .card, .card-container:hover .card {
+    transform: rotateY(180deg);
+  }
+
+.card-container, .front, .back {
+  width: 100%;
+}
+
+.card {
+  transform-style: preserve-3d;
+  transition: all 1s ease-in-out;
+  position: relative;
+}
+
+.front, .back {
+  backface-visibility: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.front {
+  z-index: 2;
+}
+
+.back {
+  transform: rotateY(180deg);
+}
+
 .main {
   line-height: 32px;
   margin: 32px;
   padding: 32px;
-  margin-top: 300px;
 }
 
 h2 {
@@ -73,6 +111,8 @@ nav {
   line-height: 250%;
   border-top: 1px solid black;
   border-bottom: 1px solid black;
+  margin-top: 225px;
+
 }
 
 li {
