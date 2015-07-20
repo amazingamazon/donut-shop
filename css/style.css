@@ -139,7 +139,7 @@ li {
 
 a {
   text-decoration: none;
-  color: #F1E8E0;
+  color: white;
 }
 
 nav li:hover {
@@ -216,12 +216,13 @@ legend {
 
 blockquote {
   float: right;
-  width: 250px;
-  border-top: 2px solid #e74c3c;
-  border-bottom: 2px solid #e74c3c;
-  font-size: 130%;
-  padding: 20px;
+  width: 350px;
+  border-top: 4px solid #e74c3c;
+  border-bottom: 4px solid #e74c3c;
+  font-size: 150%;
+  padding: 40px;
   margin-left: 10px;
+  background-color: white;
 }
 
 footer {
@@ -235,5 +236,5 @@ footer {
 }
 
 footer li {
- color: #F1E8E0;
+ color: white;
 }
