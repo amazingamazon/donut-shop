@@ -1,0 +1,140 @@
+@import url(http://fonts.googleapis.com/css?family=Ledger|Dancing+Script);
+
+body {
+  font-family: 'Ledger', Helvetica, serif;
+  font-size: 18px;
+  padding: 2.25em 1.6875em;
+  background-color: #F1E8E0;
+  background-image: -webkit-repeating-radial-gradient(center center, rgba(44,62,80,.2), rgba(44,62,80,.2) 1px, transparent 1px, transparent 100%);
+  background-image: -moz-repeating-radial-gradient(center center, rgba(44,62,80,.2), rgba(44,62,80,.2) 1px, transparent 1px, transparent 100%);
+  background-image: -ms-repeating-radial-gradient(center center, rgba(44,62,80,.2), rgba(44,62,80,.2) 1px, transparent 1px, transparent 100%);
+  background-image: repeating-radial-gradient(center center, rgba(44,62,80,.2), rgba(44,62,80,.2) 1px, transparent 1px, transparent 100%);
+  -webkit-background-size: 3px 3px;
+  -moz-background-size: 3px 3px;
+  background-size: 3px 3px;
+  padding: 0;
+  margin: 0;
+}
+
+h1 {
+  font-family: 'Dancing Script', cursive;
+  font-size: 125px;
+  text-align: center;
+  text-shadow: 1px 1px 0 #FFFFFF, 2px 2px 0 #999;
+  line-height: 175%;
+}
+
+h2 {
+  font-family: 'Dancing Script', cursive;
+  font-size: 32px;
+}
+
+nav {
+  background-color: #2C3E50;
+  text-align: center;
+  height: 50px;
+  width: 100%;
+  line-height: 250%;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+}
+
+header {
+  width: 100%;
+  height: 200px;
+  background: #c74134;
+  background: -moz-linear-gradient(top, #c74134 0%, #e74c3c 100%);
+  background: -webkit-gradient(left top, left bottom, color-stop(0%, #c74134), color-stop(100%, #e74c3c));
+  background: -webkit-linear-gradient(top, #c74134 0%, #e74c3c 100%);
+  background: -o-linear-gradient(top, #c74134 0%, #e74c3c 100%);
+  background: -ms-linear-gradient(top, #c74134 0%, #e74c3c 100%);
+  background: linear-gradient(to bottom, #c74134 0%, #e74c3c 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c74134', endColorstr='#e74c3c', GradientType=0 );
+}
+
+li {
+  display: inline;
+}
+
+a {
+  text-decoration: none;
+  color: #F1E8E0;
+}
+
+li a:hover {
+  background-color: #3498DB;
+  height: 100%;
+}
+
+a .fa:hover {
+  color:blue;
+}
+
+.main {
+  line-height: 32px;
+  margin: 32px;
+  padding: 32px;
+}
+
+table {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  text-align: center;
+  width: 100%;
+}
+
+th, td {
+  padding: 2px;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+}
+
+tbody:first-child {
+  color: #e74c3c;
+}
+
+tr:nth-child(even) {
+  background-color: #2980B9;
+  color: #F1E8E0;
+}
+
+fieldset {
+  border: 2px solid black;
+  background-color: white:
+  text-align: center;
+}
+
+legend {
+  text-align: center;
+  color: #F1E8E0;
+  border: 1px solid black;
+  background-color: #e74c3c;
+  border-radius: 15px;
+  padding: 5px;
+}
+
+.button {
+  text-align: center;
+  color: #fff;
+  background: #226fbe;
+  -webkit-transition: none;
+  -moz-transition: none;
+  transition: none;
+  border: 2px solid #226fbe;
+  border-radius: 15px;
+  height: 30px;
+  width: 100px;
+  font-family: "Ledger", Helvetica, serif;
+  font-size: 16px;
+}
+
+.button:active {
+  top: 2px;
+}
+
+.button:hover {
+  background: transparent;
+  border: 2px solid white;
+  color: #226fbe;
+}
+
