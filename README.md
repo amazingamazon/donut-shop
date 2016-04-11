@@ -26,3 +26,9 @@ http://www.cssmatic.com/gradient-generator#'\-moz\-linear\-gradient\%28top\%2C\%
 
 http://tympanus.net/Development/CreativeButtons/
 
+http://davidwalsh.name/css-flip
+
+http://gofitu.com/wp-content/uploads/2015/06/tumblr_static_wf-donuts-1.jpg
+
+
+
