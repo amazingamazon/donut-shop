@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Donut Shop Models</title>
+    <style>
+    table { border: 1px solid black; border-collapse: collapse; width: 100%; padding: 10px; max-width: 1300px }
+    th { background-color: white; border-bottom: 1px solid black }
+    tr:nth-child(even) { background-color: aliceblue }
+    tr:nth-child(odd) { background-color: lightblue }
+    </style>
+  </head>
+
+  <body>
+    <h1>Daily Demand for Top Pot Donuts by Location</h1>
+    <table id="donut-table">
+        <tbody>
+          <tr>
+            <th align="left">Location</th>
+            <th>7:00 AM</th>
+            <th>8:00 AM</th>
+            <th>9:00 AM</th>
+            <th>10:00 AM</th>
+            <th>11:00 AM</th>
+            <th>12:00 PM</th>
+            <th>1:00 PM</th>
+            <th>2:00 PM</th>
+            <th>3:00 PM</th>
+            <th>4:00 PM</th>
+            <th>5:00 PM</th>
+            <th>TOTAL</th>
+          </tr>
+        </tbody>
+    </table>
+    <p>The chart above uses data from Top Pot's business development team to model a typical day of donut sales for each location broken down by the hour. It uses a random generator to determine how many donuts customers will buy from data reported by each shop. To model a new day, refresh the browser window.</p>
+    <form id="new-shop">
+        <fieldset>
+            <legend>Add a New Location</legend>
+            Name: <input type="text" placeholder="Location Name"><br>
+            Minimum Customers per Hour: <input type="text" placeholder="0"><br>
+            Maximum Customers per Hour: <input type="text" placeholder="0"><br>
+            Average Donuts per Customer: <input type="text" placeholder="0.00"><br>
+            <input type="submit" value="Add">
+        </fieldset>
+    </form>
+    <script src="script.js"></script>
+  </body>
+</html>

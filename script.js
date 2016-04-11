@@ -1,9 +1,9 @@
-var DonutShop = function(location, options) {
+var DonutShop = function(location, minCustomers, maxCustomers, avgPerCustomer) {
   this.location = location;
-  this.minCustomers = options.minCustomers;
-  this.maxCustomers = options.maxCustomers;
-  this.avgPerCustomer = options.avgPerCustomer;
-  this.hoursOpen = options.hoursOpen;
+  this.minCustomers = minCustomers;
+  this.maxCustomers = maxCustomers;
+  this.avgPerCustomer = avgPerCustomer;
+  this.hoursOpen = 11;
   this.hourlyDonuts = [];
   this.dailyDonuts = 0;
 };
@@ -27,24 +27,55 @@ DonutShop.prototype.render = function() {
       newRow.innerHTML += "<td>" + this.hourlyDonuts[i] + "</td>";
     }
 
-  console.log(this.hourlyDonuts);
-
   for (var j = 0; j < this.hourlyDonuts.length; j++) {
     this.dailyDonuts += this.hourlyDonuts[j];
   }
 
   newRow.innerHTML += "<td>" + this.dailyDonuts + "</td>";
 
-  console.log(this.dailyDonuts);
-
   main.appendChild(newRow);
 };
 
-var downtown = new DonutShop("Downtown", {minCustomers: 8, maxCustomers: 43, avgPerCustomer: 4.50, hoursOpen: 11});
-var capitolHill = new DonutShop("Capitol Hill", {minCustomers: 4, maxCustomers: 37, avgPerCustomer: 2.00, hoursOpen: 11});
-var southLakeUnion = new DonutShop("South Lake Union", {minCustomers: 9, maxCustomers: 23, avgPerCustomer: 6.33, hoursOpen: 11});
-var wedgewood = new DonutShop("Wedgewood", {minCustomers: 2, maxCustomers: 28, avgPerCustomer: 1.25, hoursOpen: 11});
-var ballard = new DonutShop("Ballard", {minCustomers: 8, maxCustomers: 58, avgPerCustomer: 3.75, hoursOpen: 11});
+// function addShop() {
+//   var getInput = document.getElementsByTagName("input");
+
+//   var newLocation = getInput[0].value;
+//   var newMinCustomers = parseInt(getInput[1].value);
+//   var newMaxCustomers = parseInt(getInput[2].value);
+//   var newAvgPerCustomer = parseInt(getInput[3].value);
+
+//   var newShop = new DonutShop(newLocation, newMinCustomers, newMaxCustomers, newAvgPerCustomer);
+
+//   return newShop;
+// }
+
+var addNewShop = document.getElementById("new-shop");
+addNewShop.addEventListener("submit", function(e) {
+  e.preventDefault();
+  var getInput = document.getElementsByTagName("input");
+  var newLocation = getInput[0].value;
+  var newMinCustomers = parseInt(getInput[1].value);
+  var newMaxCustomers = parseInt(getInput[2].value);
+  var newAvgPerCustomer = parseInt(getInput[3].value);
+
+  var newShop = new DonutShop(newLocation, newMinCustomers, newMaxCustomers, newAvgPerCustomer);
+
+  shops.push(newShop);
+  newShop.render();
+});
+
+
+
+var shops = [];
+var downtown = new DonutShop("Downtown", 8, 43, 4.50);
+var capitolHill = new DonutShop("Capitol Hill", 4, 37, 2.00);
+var southLakeUnion = new DonutShop("South Lake Union", 9, 23, 6.33);
+var wedgewood = new DonutShop("Wedgewood", 2, 28, 1.25);
+var ballard = new DonutShop("Ballard", 8, 58, 3.75);
+var fremont = new DonutShop("Fremont", 2, 8, 4.00);
+
+shops.push(downtown, capitolHill, southLakeUnion, wedgewood, ballard);
+
 
 downtown.render();
 capitolHill.render();
